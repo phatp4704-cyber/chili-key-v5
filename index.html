@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chili Hub V5 - Key System</title>
+    <style>
+        body {
+            background-color: #0f111a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #191c26;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            width: 320px;
+            border: 2px solid #ff6432;
+        }
+        h2 {
+            color: #ff6432;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #96a0b4;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .key-box {
+            background-color: #252832;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #00ff80;
+            margin-bottom: 20px;
+            word-break: break-all;
+            border: 1px dashed #00ff80;
+            font-size: 16px;
+        }
+        .btn {
+            background-color: #ff6432;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            font-size: 14px;
+        }
+        .btn:hover {
+            background-color: #e05525;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🌶️ CHILI HUB V5</h2>
+        <p>Key hôm nay của bạn là:</p>
+        
+        <div class="key-box" id="keyText">CHILLIHUBV5-2026</div>
+        
+        <button class="btn" onclick="copyKey()">📋 COPY KEY NGAY</button>
+    </div>
+
+    <script>
+        function copyKey() {
+            var keyText = document.getElementById("keyText").innerText;
+            navigator.clipboard.writeText(keyText).then(function() {
+                alert("Đã copy Key thành công! Hãy quay lại game dán vào nhé.");
+            }, function(err) {
+                alert("Hãy bôi đen và copy thủ công nhé!");
+            });
+        }
+    </script>
+</body>
+</html>

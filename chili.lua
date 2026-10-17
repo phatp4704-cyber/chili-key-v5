@@ -1,6 +1,6 @@
 -- [[ HỆ THỐNG KEY SYSTEM - CHILI HUB V5 ]] --
 
-local Link4M = "ĐIỀN_LINK_4M_MỚI_CỦA_BẠN_VÀO_ĐÂY" 
+local Link4M = "https://link4m.net/R8jhO" 
 local MainScriptURL = "https://raw.githubusercontent.com/kadit9999/stealanegg/refs/heads/main/ChilliV5BaKhi.lua"
 local CorrectKey = "CHILLIHUBV5-2026"
 
